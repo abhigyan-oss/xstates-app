@@ -31,7 +31,8 @@ function App() {
         .then((res) => res.json())
         .then((data) => setCities(data));
     }
-  }, [state]);
+  }, [country, state]);
+  
 
   return (
     <div style={{ padding: "20px" }}>
